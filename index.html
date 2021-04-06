@@ -5,26 +5,134 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Javascript Fundamentals Quiz</title>
     <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap" rel="stylesheet">
+
 
     <script src="script.js"></script>
 </head>
 <body>   
-    <div class="quiz">
-        <div id="questions" class="hide">
-            <div id="question1">QUESTION 1</div>
-            <div id="answers" class="btn">
-                <button class="button">answera</button>
-                <button class="button">answerb</button>
-            </div>
+    <!---->
+    <header class="jumbotron jumbotron-fluid custom-jumbotron">
+        <div class="container text-center">
+          <h1>Javascript Fundamentals Quiz</h1>
+          <h2>Time to complete quiz: <br /> <span id="seconds">00:00:00</span></h2>
+          <!-- <div id="clock"><h3><span id="seconds">Time to complete quiz: 30 seconds</span></h3></div> -->
         </div>
-   
-        <div class="thebuttons">
-        <button id= "start" class="start-btn">START</button>
-        <button id= "next" class="next-btn">NEXT</button>
-        
-    </div>
-    </div>
+      </header>
 
-     
+      <main class="container-fluid">
+        <div class="row">
+          <section class="col-12 col-md-4 col-lg-3">
+            <div class="card custom-card">
+              <h3 class="card-header">
+                Instructions: 
+              </h3>
+              <div class="card-body">
+                <div class="card-text">
+                Please click on the button below to start quiz:
+                </div>
+              </div>
+              <div class="card-footer">
+                <button class="btn btn-block custom-btn" data-toggle="modal" data-target="#project-modal">Start Quiz</button>
+              </div>
+            </div>
+
+            <section class="col-12 col-md-8 col-lg-9">
+                <div class="table-responsive">
+                  <table class="table table-bordered custom-table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Question 1</th>
+                        <th scope="col">Question 2</th>
+                        <th scope="col">Question 3</th>
+                        <th scope="col">Question 4</th>
+                        <th scope="col">Initials</th>
+                      </tr>
+                    </thead>
+                    <tbody id="project-display"></tbody>
+                  </table>
+                </div>
+              </section>
+            </div>
+          </main>
+
+
+
+
+
+<!---->
+            <div class="modal fade custom-modal" id="project-modal" tabindex="-1" role="dialog"
+    aria-labelledby="project-modal-form" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="project-modal-form">JAVASCRIPT FUNDAMENTALS QUIZ: Please select true or false</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <form id="project-form">
+          <div class="modal-body">
+
+            <div class="form-group">
+              <label for="project-type-input">Question 1:</label>
+              <select class="form-control" id="project-type-input">
+                <option selected disabled>JavaScript is NOT one of the three fundamental programming languages of the modern web?</option>
+                <option value="Web Application (Front End)">True</option>
+                <option value="Web Application (Back End)">False</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+                <label for="project-type-input">Question 2:</label>
+                <select class="form-control" id="project-type-input">
+                  <option selected disabled>Alerts, prompts, and confirms create a link in the browser when run.</option>
+                  <option value="Web Application (Front End)">True</option>
+                  <option value="Web Application (Back End)">False</option>
+                </select>
+              </div>
+           
+              <div class="form-group">
+                <label for="project-type-input">Question 3:</label>
+                <select class="form-control" id="project-type-input">
+                  <option selected disabled>For loops can be used to run repeated blocks of code over a set period.</option>
+                  <option value="Web Application (Front End)">True</option>
+                  <option value="Web Application (Back End)">False</option>
+                </select>
+              </div>
+            
+              <div class="form-group">
+                <label for="project-type-input">Question 4:</label>
+                <select class="form-control" id="project-type-input">
+                  <option selected disabled>console.log displays discreetly to the debugger.</option>
+                  <option value="Web Application (Front End)">True</option>
+                  <option value="Web Application (Back End)">False</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="project-name-input">Save my initials:</label>
+                <input type="text" id="project-name-input" class="form-control" placeholder="Please enter your initials"
+                  required />
+              </div>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="submit" class="btn custom-btn">Submit Quiz</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+
 </body>
 </html>
