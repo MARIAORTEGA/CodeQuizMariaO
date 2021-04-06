@@ -1,0 +1,59 @@
+body {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 400;
+  background-color: pink;
+  color: #ff69b4;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+
+thead {
+  background-color: pink;
+  color: #db7093;
+  font-weight: 700;
+}
+
+.custom-jumbotron,
+.custom-card .card-header,
+.custom-card .card-footer,
+.custom-modal .modal-header,
+.custom-modal .modal-footer {
+  background-color: #dda0dd;
+  color: #ba55d3;
+}
+
+.custom-card {
+  border-color: #c71585;
+}
+
+.custom-card .card-body,
+.custom-modal .modal-body {
+  background-color: #ffc0cb;
+  color: #c71585;
+}
+
+.custom-btn {
+  background-color: #ffc0cb;
+  color: #c71585;
+}
+
+.custom-btn:hover {
+  background-color: #c71585;
+  color: #c71585;
+}
+
+.custom-table tbody {
+  background-color: #c71585;
+  color: #ffc0cb;
+}
+
+.delete-project-btn {
+  cursor: pointer;
+}
