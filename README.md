@@ -13,5 +13,6 @@ The user is also required to submit their initials after quiz is completed.
 3. css
 
 ## Screenshots:
-![Screen Shot 2021-04-06 at 1 35 40 AM](https://user-images.githubusercontent.com/71056915/113664442-bfeb2500-9679-11eb-87ff-21bb27e2f0d5.png)
+![Screen Shot 2021-04-06 at 1 50 34 AM](https://user-images.githubusercontent.com/71056915/113664941-a1d1f480-967a-11eb-845e-cb13372b5943.png)
+
 
